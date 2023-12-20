@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+/* Menu */
+div#openmenu { display: none; position: absolute; width: 50%; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+/* Menu tab & panel styles */
+.text-tabcolor { color: rgb(255, 255, 255)!important; }
+.bg-active-tab { background: #050b17!important; }
+.bg-panel { background: #050b17!important; }
+.q-tab-panels { border-top-right-radius: 12px!important; border-bottom-right-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
+.q-splitter__panel.q-splitter__before { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
+.q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
+
+/* Menu text styles */
+.text-h6 { color: rgb(255, 255, 255)!important; }
+.text-h7 { color: rgba(255, 255, 255, 0.4)!important; }
+
+/* Menu buttons & checkboxes & toggle switch icons styles */
+.text-textbutton { color: rgb(20, 130, 220)!important; }
+.bg-bgbutton { background: rgba(20, 130, 220, 0.5)!important; }
+.q-checkbox__inner { color: rgb(255 255 255 / 70%)!important; }
+.text-checkbox { color: rgba(20, 130, 220, 0.5)!important; }
+.q-checkbox__svg { color: rgb(20, 130, 220)!important; }
+.q-checkbox__inner--truthy .q-checkbox__bg { box-shadow: 0px 0px 3px 3px rgba(20, 140, 220, 0.15)!important; } /* if you want the checkboxes to have a glow/shadow */
+.text-toggleicons { color: rgb(20, 130, 220)!important; }
+
+/* Menu misc */
+hr { opacity: 0.1!important; } /* horizontal line that seperates sections */
+.q-mb-md { margin-bottom: 0px!important; } /* removes extra top padding */
+.q-mb-md-d { padding-left: 10px!important; padding-bottom: 10px!important;} /* keeps q-items aligned */
+.q-item { padding: 8px 0px!important; } /* keeps q-items aligned */
+.q-item__section--avatar { min-width: 40px!important } /* keeps q-items aligned */
+.q-item__section--side { padding-right: 0px!important; } /* keeps q-items aligned */
+.q-splitter--vertical>.q-splitter__separator { width: 0px!important; } /* keeps navigation tab panel seamless */
+div#q-loading-bar { display: none!important; } /* makes sure there's no ajax load from quasar */
+::-webkit-scrollbar { display: none!important; } /* makes sure there's no ugly scrollbar on menu*/
+
+/* Hud radial styles */
+.text-health { color: rgb(33, 171, 97)!important; }
+.text-stress { color: #ff2b2b!important; }
+.text-nos { color: rgb(255, 72, 133)!important; }
+.text-cruise { color: rgb(255, 72, 133)!important; }
+.text-armed { color: rgb(255, 72, 133)!important; }
+.text-harness { color: rgb(182, 72, 255)!important; }
+.text-oxygen { color: #e6d9ff!important; }
+.text-parachute { color: rgb(0, 0, 0)!important; }
+.text-dev { color: rgb(0, 0, 0)!important; }
+
+#main-container {
+  width: 100%;
+  height: auto;
+  font-family: 'Oxygen', sans-serif;
+}
+
+/* Money */
+#money-container {
+  position: absolute;
+  right: 2vw;
+  top: 5vh;
+  font-weight: 400;
+  font-size: 40px;
+}
+
+#sign, #bank {
+  text-align: right;
+  color: #00ac31;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#plus {
+  font-size: 50px;
+  text-align: right;
+  color: #00ac31;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#minus {
+  font-size: 50px;
+  text-align: right;
+  color: #ac0000;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+#money {
+  text-align: right;
+  color: #ffffff;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+}
+
+/* Player HUD */
+
+#playerhud {
+  position: absolute;
+  display: flex;
+  left: 2.5vw;
+  bottom: 0.5vh;
+}
+
+.q-ml-xl {
+  margin-left: -22px!important; /* Change this to space radials */
+}
+
+.q-ml-fha {
+  margin-left: -62px!important; /* Change this to space radials */
+}
+
+/* Vehicle HUD */
+
+speed:before {
+  content: "MPH"; /* If using KPH change this content from MPH */
+  display: block;
+  background: #fff;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent;
+  opacity: 50%;
+}
+
+speed {
+  position: fixed;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  text-shadow: 0px 2px 11px rgba(0, 0, 0, 0.3);
+}
+
+altitude:after {
+  content: "ALT";
+  display: block;
+  padding-top: 10px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+altitude {
+  transform: rotate(135deg);
+  font-size: 2.4vh;
+  position: fixed; 
+  color: #fff; 
+  text-align: center;
+  font-weight: 600;
+  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7); 
+}
+
+/* Animation */
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/* Compass */
+.baseplate {
+  position: relative;
+  top: 70vh;
+  left: 1.4%;
+	width: 150px;
+  height: auto;
+}
+
+.street-container {
+  position: relative;
+  top: 72vh;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bold;
+  font-size: 1.6vh;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+}
+
+.street1 {
+  position: absolute;
+  margin: 0 auto;
+  left: 10%;
+  color: rgb(255, 255, 255);
+}
+
+.street2 {
+  position: absolute;
+  margin: 0 auto;
+  left: 10%;
+  bottom: 10%;
+  font-size: 1.4vh;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.pointer {
+  position: absolute;
+  margin: 0 auto;
+  top: 28%;
+  left: 0;
+  right: 0;
+  font-family: 'Oxygen', sans-serif;
+  color: #ff2b2b;
+  font-size: 1.4vh;
+  text-align: center;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  z-index: 101;
+}
+
+.degrees {
+  position: absolute;
+  margin: 0 auto;
+  top: 12%;
+  left: 0;
+  right: 0;
+  font-family: 'Oxygen', sans-serif;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1vh;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%);
+  z-index: 100;
+}
+
+.bezel {
+  position: relative;
+  width:100%;
+  height: 2vh;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 0.35vh;
+  font-weight: bold;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  z-index: 101;
+}
+
+.bearing {
+  position: relative;
+  width:100%;
+  height: 2.5vh;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 2vh;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  background: #212121;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 5px;
+}

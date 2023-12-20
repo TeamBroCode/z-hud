@@ -1,0 +1,46 @@
+.responsive {
+    position: absolute!important;
+}
+
+@media (width: 1920px) and (height: 1080px) {
+  .responsive {
+    margin-left: 17vw!important;
+    bottom: 17.5vh!important;
+  }
+  #speedometer {
+    position: relative;
+    left: 2vh!important;
+  }
+  #fuelgauge {
+    position: relative;
+    left: 3.5vh!important;
+    bottom: 6.6vh!important;
+  }
+  #altitudegauge {
+    position: relative;
+    left: 5vh!important;
+  }
+  #seatbelt {
+    position: relative;
+    left: 6.5vh!important;
+    bottom: 6.6vh!important;
+  }
+  #engine {
+    position: relative;
+    left: 10.5vh!important;
+    bottom: 6.6vh!important;
+  }
+  speed {
+    font-size: 5.5vh!important;
+  }
+  speed:before {
+    position: absolute;
+    font-size: 1.5vh!important;
+  }
+  altitude {
+    font-size: 2vh!important;
+  }
+  altitude:after {
+    font-size: 0.9vh!important;
+  }
+}
