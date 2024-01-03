@@ -207,101 +207,101 @@
                 <div id="playerHud" v-show="show">
                     <transition name="fade">
                     <div v-if="showVoice">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="voice" size="50px" :thickness="0.15" :style="{color: talkingColor}" :min="0" :max="5">
-                        <q-icon style="top: -0.5px; left: 0px;" :name="voiceIcon" size="19.5px" :style="[enhancements['voice'] ? {color: enhancements['voice']} : {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="voice" size="2.6041666666666665vw" :thickness="0.15" :style="{color: talkingColor}" :min="0" :max="5">
+                        <q-icon style="top: -0.0544069640914037vh; left: 0vw;" :name="voiceIcon" size="1.015625vw" :style="[enhancements['voice'] ? {color: enhancements['voice']} : {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showHealth">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="health" size="50px" :thickness="0.15" :style="{color: healthColor}" :min="0" :max="100">
-                        <q-icon style="top: -0.5px; left: -0.4px;" name="fa fa-heart-pulse" size="19.5px" :style="[enhancements['health'] ? {color: enhancements['health']} : {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="health" size="2.6041666666666665vw" :thickness="0.15" :style="{color: healthColor}" :min="0" :max="100">
+                        <q-icon style="top: -0.0544069640914037vh; left: -0.020833333333333332vw;" name="fa fa-heart-pulse" size="1.015625vw" :style="[enhancements['health'] ? {color: enhancements['health']} : {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showArmor">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="armor" size="50px" :thickness="0.15" :style="{color: armorColor}" :min="0" :max="100">
-                        <q-icon name="fa fa-shield" size="19.5px" :style="[enhancements['armor'] ? {color: enhancements['armor']} : {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="armor" size="2.6041666666666665vw" :thickness="0.15" :style="{color: armorColor}" :min="0" :max="100">
+                        <q-icon name="fa fa-shield" size="1.015625vw" :style="[enhancements['armor'] ? {color: enhancements['armor']} : {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showHunger">
-                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-180deg); opacity: 40%;" :value="50" size="50px" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-180deg); left: -50%;" show-value :value="hunger/2" size="50px" :thickness="0.15" :style="{color: hungerColor}" :min="0" :max="100">
-                        <q-icon style="transform: rotate(-180deg); top: -1.5px; left: 4px;" name="fa fa-bowl-food" size="15.5px" :style="[enhancements['hunger'] ? {color: enhancements['hunger']} : {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-180deg); opacity: 40%;" :value="50" size="2.6041666666666665vw" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-180deg); left: -50%;" show-value :value="hunger/2" size="2.6041666666666665vw" :thickness="0.15" :style="{color: hungerColor}" :min="0" :max="100">
+                        <q-icon style="transform: rotate(-180deg); top: 0.1632208922742111vh; left: 0.20833333333333334vw;" name="fa fa-bowl-food" size="0.8072916666666666vw" :style="[enhancements['hunger'] ? {color: enhancements['hunger']} : {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showThirst">
-                        <q-circular-progress rounded style="margin-left: -75px; opacity: 40%;" :value="50" size="50px" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded style="margin-left: -65px; right: -15px;" show-value :value="thirst/2" size="50px" :thickness="0.15" :style="{color: thirstColor}" :min="0" :max="100">
-                        <q-icon style="top: -0.5px; left: 3px;" name="fa fa-bottle-water" size="15.5px" :style="[enhancements['thirst'] ? {color: enhancements['thirst']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded style="margin-left: -3.90625vw; opacity: 40%;" :value="50" size="2.6041666666666665vw" :thickness="0.10" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded style="margin-left: -3.3854166666666665vw; right: -0.78125vw;" show-value :value="thirst/2" size="2.6041666666666665vw" :thickness="0.15" :style="{color: thirstColor}" :min="0" :max="100">
+                        <q-icon style="top: -0.0544069640914037vh; left: 0.15625vw;" name="fa fa-bottle-water" size="0.8072916666666666vw" :style="[enhancements['thirst'] ? {color: enhancements['thirst']}: {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showStress">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="stress" size="50px" :thickness="0.15" color="stress" :min="0" :max="100">
-                        <q-icon style="top: -0.5px; left: -0.5px;" name="fas fa-brain" size="19.5px" :style="[enhancements['stress'] ? {color: enhancements['stress']}: {color: '#ff2b2b'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="stress" size="2.6041666666666665vw" :thickness="0.15" color="stress" :min="0" :max="100">
+                        <q-icon style="top: -0.0544069640914037vh; left: -0.026041666666666668vw;" name="fas fa-brain" size="1.015625vw" :style="[enhancements['stress'] ? {color: enhancements['stress']}: {color: '#ff2b2b'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showOxygen">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="oxygen" size="50px" :thickness="0.15" color="oxygen" :min="0" :max="100">
-                        <q-icon style="top: -2px; left: -0.1px;" name="fas fa-lungs" size="19.5px" :style="[enhancements['oxygen'] ? {color: enhancements['oxygen']}: {color: '#e6d9ff'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="oxygen" size="2.6041666666666665vw" :thickness="0.15" color="oxygen" :min="0" :max="100">
+                        <q-icon style="top: -0.2176278563656148vh; left: -0.005208333333333333vw;" name="fas fa-lungs" size="1.015625vw" :style="[enhancements['oxygen'] ? {color: enhancements['oxygen']}: {color: '#e6d9ff'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showArmed">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="static" size="50px" :thickness="0.15" color="armed" :min="0" :max="100">
-                        <q-icon name="fas fa-stream" size="19.5px" :style="[enhancements['armed'] ? {color: enhancements['armed']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="static" size="2.6041666666666665vw" :thickness="0.15" color="armed" :min="0" :max="100">
+                        <q-icon name="fas fa-stream" size="1.015625vw" :style="[enhancements['armed'] ? {color: enhancements['armed']}: {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showParachute">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="parachute" size="50px" :thickness="0.15" color="parachute" :min="0" :max="2">
-                        <q-icon name="fas fa-parachute-box" size="23px" :style="[enhancements['parachute'] ? {color: enhancements['parachute']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="parachute" size="2.6041666666666665vw" :thickness="0.15" color="parachute" :min="0" :max="2">
+                        <q-icon name="fas fa-parachute-box" size="1.1979166666666667vw" :style="[enhancements['parachute'] ? {color: enhancements['parachute']}: {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showHarness">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="hp" size="50px" :thickness="0.15" color="harness" :min="0" :max="100">
-                        <q-icon name="fas fa-user-slash" size="19.5px" :style="[enhancements['harness'] ? {color: enhancements['harness']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="hp" size="2.6041666666666665vw" :thickness="0.15" color="harness" :min="0" :max="100">
+                        <q-icon name="fas fa-user-slash" size="1.015625vw" :style="[enhancements['harness'] ? {color: enhancements['harness']}: {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showCruise">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="speed" size="50px" :thickness="0.15" color="cruise" :min="0" :max="100">
-                        <q-icon style="top: -1.5px;" name="fas fa-tachometer-alt-fast" size="19.5px" :style="[enhancements['cruise'] ? {color: enhancements['cruise']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="speed" size="2.6041666666666665vw" :thickness="0.15" color="cruise" :min="0" :max="100">
+                        <q-icon style="top: 0.1632208922742111vh;" name="fas fa-tachometer-alt-fast" size="1.015625vw" :style="[enhancements['cruise'] ? {color: enhancements['cruise']}: {color: 'white'}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showNos">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="nos" size="50px" :thickness="0.15" color="nos" :min="0" :max="100">
-                        <q-icon name="fas fa-meteor" size="19.5px" :style="[enhancements['nos'] ? {color: enhancements['nos']}: {color: nosColor}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="nos" size="2.6041666666666665vw" :thickness="0.15" color="nos" :min="0" :max="100">
+                        <q-icon name="fas fa-meteor" size="1.015625vw" :style="[enhancements['nos'] ? {color: enhancements['nos']}: {color: nosColor}]"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div v-if="showDev">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="static" size="50px" :thickness="0.15" color="dev" :min="0" :max="100">
-                        <q-icon name="fas fa-terminal" size="19.5px" :style="[enhancements['dev'] ? {color: enhancements['dev']}: {color: 'white'}]"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="static" size="2.6041666666666665vw" :thickness="0.15" color="dev" :min="0" :max="100">
+                        <q-icon name="fas fa-terminal" size="1.015625vw" :style="[enhancements['dev'] ? {color: enhancements['dev']}: {color: 'white'}]"/>
                     </div>
                     </transition>
 
                     <transition name="fade" v-for="buffProp in buffs">
                         <div>
-                            <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="50px" :thickness="0.10" :style="{color: buffProp.progressColor}" :min="0" :max="100"></q-circular-progress>
-                            <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="buffProp.progressValue" size="50px" :thickness="0.15" :style="{color: buffProp.progressColor}" :min="0" :max="100">
-                            <q-icon :name="buffProp.iconName" size="19.5px" :style="{color: buffProp.iconColor}"/>
+                            <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="static" size="2.6041666666666665vw" :thickness="0.10" :style="{color: buffProp.progressColor}" :min="0" :max="100"></q-circular-progress>
+                            <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="buffProp.progressValue" size="2.6041666666666665vw" :thickness="0.15" :style="{color: buffProp.progressColor}" :min="0" :max="100">
+                            <q-icon :name="buffProp.iconName" size="1.015625vw" :style="{color: buffProp.iconColor}"/>
                         </div>
                     </transition>
                 </div>
@@ -312,27 +312,27 @@
                         <speed :style="{background: speedColor}" style="-webkit-background-clip: text; -webkit-text-fill-color: transparent; ">{{(speed)}}</speed>
                     </div>
                     <div class="responsive" id="fuelgauge">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="fuelgauge" size="36px" :thickness="0.21" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="fuel" size="36px" :thickness="0.21" :style="{color: fuelColor}" center-color="grey-10">
-                        <q-icon name="fas fa-gas-pump" size="14px" :style="{color: fuelColor}"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="fuelgauge" size="1.875vw" :thickness="0.21" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="fuel" size="1.875vw" :thickness="0.21" :style="{color: fuelColor}" center-color="grey-10">
+                        <q-icon name="fas fa-gas-pump" size="0.7291666666666666vw" :style="{color: fuelColor}"/>
                     </div>
                     <div class="responsive" id="altitudegauge" v-if="showAltitude">
-                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-135deg); opacity: 40%;" :value="altitudegauge" size="70px" :thickness="0.21" color="grey-10" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-135deg); left: -50%;" show-value :value="altitude" size="70px" :thickness="0.21" color="grey-1" :min="0" :max="750">
+                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-135deg); opacity: 40%;" :value="altitudegauge" size="3.6458333333333335vw" :thickness="0.21" color="grey-10" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="transform: rotate(-135deg); left: -50%;" show-value :value="altitude" size="3.6458333333333335vw" :thickness="0.21" color="grey-1" :min="0" :max="750">
                         <altitude>{{(altitude)}}</altitude>
                     </div>
                     <transition name="fade">
                     <div class="responsive" id="seatbelt" v-if="showSeatbelt">
-                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" size="36px" :thickness="0.21" color="gauge" :min="0" :max="100"></q-circular-progress>
-                        <q-circular-progress rounded class="q-ml-xl" style="border-radius: 50%; left: -30%;" :style="{background: seatbeltColor}" show-value size="36px" :thickness="0.21" color="gauge" :min="0" :max="750">
-                        <q-icon name="fas fa-user-slash" :value="seatbelt" size="14px" :style="{color: seatbeltIconColor}"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" size="1.875vw" :thickness="0.21" color="gauge" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="border-radius: 50%; left: -30%;" :style="{background: seatbeltColor}" show-value size="1.875vw" :thickness="0.21" color="gauge" :min="0" :max="750">
+                        <q-icon name="fas fa-user-slash" :value="seatbelt" size="0.7291666666666666vw" :style="{color: seatbeltIconColor}"/>
                     </div>
                     </transition>
                     <transition name="fade">
                     <div class="responsive" id="engine" v-if="showEngine">
-                            <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="100" size="36px" :thickness="0.21" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
-                            <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="engine" size="36px" :thickness="0.21" :style="{color: engineColor}" :min="0" :max="100" center-color="grey-10">
-                            <q-icon name="fa fa-gauge" size="14px" :style="{color: engineColor}"/>
+                        <q-circular-progress rounded class="q-ml-xl" style="opacity: 40%;" :value="100" size="1.875vw" :thickness="0.21" :style="{color: grey-10}" :min="0" :max="100"></q-circular-progress>
+                        <q-circular-progress rounded class="q-ml-xl" style="left: -50%;" show-value :value="engine" size="1.875vw" :thickness="0.21" :style="{color: engineColor}" :min="0" :max="100" center-color="grey-10">
+                        <q-icon name="fa fa-gauge" size="0.7291666666666666vw" :style="{color: engineColor}"/>
                     </div>
                     </transition>
                 </div>

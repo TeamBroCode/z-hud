@@ -97,19 +97,41 @@ div#q-loading-bar { display: none!important; } /* makes sure there's no ajax loa
 }
 
 .q-ml-xl {
-  margin-left: -22px!important; /* Change this to space radials */
-}
-
-.q-ml-fha {
-  margin-left: -62px!important; /* Change this to space radials */
+  margin-left: -1.2176470588235294vw!important; /* Change this to space radials */
 }
 
 /* Vehicle HUD */
 
+#speedometer {
+  position: relative;
+  left: 2vh!important;
+}
+#fuelgauge {
+  position: relative;
+  left: 3.5vh!important;
+  bottom: 6.6vh!important;
+}
+#altitudegauge {
+  position: relative;
+  left: 5vh!important;
+}
+#seatbelt {
+  position: relative;
+  left: 6.5vh!important;
+  bottom: 6.6vh!important;
+}
+#engine {
+  position: relative;
+  left: 10.5vh!important;
+  bottom: 6.6vh!important;
+}
+
 speed:before {
   content: "MPH"; /* If using KPH change this content from MPH */
+  position: absolute;
   display: block;
   background: #fff;
+  font-size: 1.5vh!important;
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent;
   opacity: 50%;
@@ -117,14 +139,15 @@ speed:before {
 
 speed {
   position: fixed;
+  font-size: 5.5vh!important;
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
-  text-shadow: 0px 2px 11px rgba(0, 0, 0, 0.3);
 }
 
 altitude:after {
   content: "ALT";
   display: block;
+  font-size: 0.9vh!important;
   padding-top: 10px;
   padding-left: 2px;
   padding-right: 2px;
@@ -132,7 +155,7 @@ altitude:after {
 
 altitude {
   transform: rotate(135deg);
-  font-size: 2.4vh;
+  font-size: 2vh!important;
   position: fixed; 
   color: #fff; 
   text-align: center;
@@ -230,7 +253,7 @@ altitude {
 
 .bezel {
   position: relative;
-  width:100%;
+  width:8vw;
   height: 2vh;
   font-family: 'Oxygen', sans-serif;
   font-size: 0.35vh;
@@ -241,7 +264,7 @@ altitude {
 
 .bearing {
   position: relative;
-  width:100%;
+  width:8vw;
   height: 2.5vh;
   font-family: 'Oxygen', sans-serif;
   font-size: 2vh;
