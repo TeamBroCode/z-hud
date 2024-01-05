@@ -9,7 +9,7 @@ Config.MinimumSpeedUnbuckled = 50 -- Going Over This Speed Will Cause Stress
 Config.MinimumSpeed = 100 -- Going Over This Speed Will Cause Stress
 Config.DisablePoliceStress = true -- If true will disable stress for people with the police job
 Config.Buffs = 'ps-buffs' -- PS-Buff integration
-Config.Fuel = 'z-fuel' -- Fuel Script for getfuel and setfuel exports
+Config.Fuel = 'LegacyFuel' -- Fuel Script for getfuel and setfuel exports
 
 -- Stress
 Config.WhitelistedWeaponArmed = { -- weapons specifically whitelisted to not show armed mode

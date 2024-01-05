@@ -676,10 +676,15 @@ CreateThread(function()
             if not IsEntityInWater(player) then
                 oxygen = 100 - GetPlayerSprintStaminaRemaining(playerId)
             end
+
             -- Oxygen
             if IsEntityInWater(player) then
                 oxygen = GetPlayerUnderwaterTimeRemaining(playerId) * 10
             end
+            if oxygen <= 0 then
+                oxygen = 0
+            end
+
             -- Player hud
             local talking = NetworkIsPlayerTalking(playerId)
             local voice = 0
