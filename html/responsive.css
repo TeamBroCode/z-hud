@@ -1,5 +1,7 @@
 .responsive {
-    position: absolute!important;
-    margin-left: 17vw!important;
-    bottom: 17.5vh!important;
+    position: absolute !important;
+    margin-left: 17vw !important;
+    bottom: 17.5vh !important;
 }
+
+/* Force your Fivem NUI to 1080p as we're lazy and adding media queries is pending. */

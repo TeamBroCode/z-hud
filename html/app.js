@@ -1,5 +1,3 @@
-/** @format */
-
 const { ref, onBeforeUnmount } = Vue;
 
 const app = Vue.createApp({

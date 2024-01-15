@@ -4,19 +4,27 @@
 
 ## Overview
 
-Z HUD is a redesigned user interface for the well-known qb-hud script that includes some minor fixes for HUD bugs along with increased and improved functionality.
+Z HUD is a redesigned user interface for the popular qb-hud script that offers more and better functionality along with a few small fixes for HUD bugs.
+
+## Addon Features
+
+-   Utilize Fontawesome Pro Icons in the HUD
+-   Support for [PS BUFFS](https://github.com/Project-Sloth/ps-buffs)
 
 ## Dependencies
-- QBCore
-- QBOX (Soon)
+
+-   QBCore
+-   QBOX (Soon)
+-   [PS BUFFS](https://github.com/Project-Sloth/ps-buffs) (Optional)
 
 ## Contribute
 
 We welcome contributions! If you have ideas for improvements or want to report bugs, please open an issue on GitHub. Additionally, you can fork the repository and submit a pull request.
 
 ## Credits
+
 [QB HUD](https://github.com/qbcore-framework/qb-hud) - For the Initial Code
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [GPL-3.0 License](LICENSE).

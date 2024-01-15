@@ -1,8 +1,10 @@
 fx_version "cerulean"
 game "gta5"
 
-description "z-hud"
-version "1.2.0"
+description "Z HUD"
+version "1.0.0"
+lua54 "yes"
+use_fxv2_oal "yes"
 
 shared_scripts {
 	"@qb-core/shared/locale.lua",
@@ -12,7 +14,6 @@ shared_scripts {
 
 client_script "client.lua"
 server_script "server.lua"
-lua54 "yes"
 
 ui_page "html/index.html"
 
@@ -21,12 +22,4 @@ files {
 	"html/styles.css",
 	"html/responsive.css",
 	"html/app.js"
-}
-
-escrow_ignore {
-	"html/*",
-	"stream/*",
-	"config.lua",
-	"server.lua",
-	"locales/*"
 }

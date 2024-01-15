@@ -1,50 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
 
 /* Menu */
-div#openmenu { display: none; position: absolute; width: 50%; top: 50%; left: 50%; transform: translate(-50%,-50%); }
+div#openmenu {
+  display: none;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
 /* Menu tab & panel styles */
-.text-tabcolor { color: rgb(255, 255, 255)!important; }
-.bg-active-tab { background: #050b17!important; }
-.bg-panel { background: #050b17!important; }
-.q-tab-panels { border-top-right-radius: 12px!important; border-bottom-right-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
-.q-splitter__panel.q-splitter__before { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
-.q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content { border-top-left-radius: 12px!important; border-bottom-left-radius: 12px!important; } /* change all 12px for a different border radius (rounds edges of the menu) */
+.text-tabcolor {
+  color: rgb(255, 255, 255) !important;
+}
+
+.bg-active-tab {
+  background: #050b17 !important;
+}
+
+.bg-panel {
+  background: #050b17 !important;
+}
+
+.q-tab-panels {
+  border-top-right-radius: 12px !important;
+  border-bottom-right-radius: 12px !important;
+}
+
+/* change all 12px for a different border radius (rounds edges of the menu) */
+.q-splitter__panel.q-splitter__before {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+}
+
+/* change all 12px for a different border radius (rounds edges of the menu) */
+.q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content {
+  border-top-left-radius: 12px !important;
+  border-bottom-left-radius: 12px !important;
+}
+
+/* change all 12px for a different border radius (rounds edges of the menu) */
 
 /* Menu text styles */
-.text-h6 { color: rgb(255, 255, 255)!important; }
-.text-h7 { color: rgba(255, 255, 255, 0.4)!important; }
+.text-h6 {
+  color: rgb(255, 255, 255) !important;
+}
+
+.text-h7 {
+  color: rgba(255, 255, 255, 0.4) !important;
+}
 
 /* Menu buttons & checkboxes & toggle switch icons styles */
-.text-textbutton { color: rgb(20, 130, 220)!important; }
-.bg-bgbutton { background: rgba(20, 130, 220, 0.5)!important; }
-.q-checkbox__inner { color: rgb(255 255 255 / 70%)!important; }
-.text-checkbox { color: rgba(20, 130, 220, 0.5)!important; }
-.q-checkbox__svg { color: rgb(20, 130, 220)!important; }
-.q-checkbox__inner--truthy .q-checkbox__bg { box-shadow: 0px 0px 3px 3px rgba(20, 140, 220, 0.15)!important; } /* if you want the checkboxes to have a glow/shadow */
-.text-toggleicons { color: rgb(20, 130, 220)!important; }
+.text-textbutton {
+  color: rgb(20, 130, 220) !important;
+}
+
+.bg-bgbutton {
+  background: rgba(20, 130, 220, 0.5) !important;
+}
+
+.q-checkbox__inner {
+  color: rgb(255 255 255 / 70%) !important;
+}
+
+.text-checkbox {
+  color: rgba(20, 130, 220, 0.5) !important;
+}
+
+.q-checkbox__svg {
+  color: rgb(20, 130, 220) !important;
+}
+
+.q-checkbox__inner--truthy .q-checkbox__bg {
+  box-shadow: 0px 0px 3px 3px rgba(20, 140, 220, 0.15) !important;
+}
+
+/* if you want the checkboxes to have a glow/shadow */
+.text-toggleicons {
+  color: rgb(20, 130, 220) !important;
+}
 
 /* Menu misc */
-hr { opacity: 0.1!important; } /* horizontal line that seperates sections */
-.q-mb-md { margin-bottom: 0px!important; } /* removes extra top padding */
-.q-mb-md-d { padding-left: 10px!important; padding-bottom: 10px!important;} /* keeps q-items aligned */
-.q-item { padding: 8px 0px!important; } /* keeps q-items aligned */
-.q-item__section--avatar { min-width: 40px!important } /* keeps q-items aligned */
-.q-item__section--side { padding-right: 0px!important; } /* keeps q-items aligned */
-.q-splitter--vertical>.q-splitter__separator { width: 0px!important; } /* keeps navigation tab panel seamless */
-div#q-loading-bar { display: none!important; } /* makes sure there's no ajax load from quasar */
-::-webkit-scrollbar { display: none!important; } /* makes sure there's no ugly scrollbar on menu*/
+hr {
+  opacity: 0.1 !important;
+}
+
+/* horizontal line that seperates sections */
+.q-mb-md {
+  margin-bottom: 0px !important;
+}
+
+/* removes extra top padding */
+.q-mb-md-d {
+  padding-left: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+/* keeps q-items aligned */
+.q-item {
+  padding: 8px 0px !important;
+}
+
+/* keeps q-items aligned */
+.q-item__section--avatar {
+  min-width: 40px !important
+}
+
+/* keeps q-items aligned */
+.q-item__section--side {
+  padding-right: 0px !important;
+}
+
+/* keeps q-items aligned */
+.q-splitter--vertical>.q-splitter__separator {
+  width: 0px !important;
+}
+
+/* keeps navigation tab panel seamless */
+div#q-loading-bar {
+  display: none !important;
+}
+
+/* makes sure there's no ajax load from quasar */
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* makes sure there's no ugly scrollbar on menu*/
 
 /* Hud radial styles */
-.text-health { color: rgb(33, 171, 97)!important; }
-.text-stress { color: #ff2b2b!important; }
-.text-nos { color: rgb(255, 72, 133)!important; }
-.text-cruise { color: rgb(255, 72, 133)!important; }
-.text-armed { color: rgb(255, 72, 133)!important; }
-.text-harness { color: rgb(182, 72, 255)!important; }
-.text-oxygen { color: #e6d9ff!important; }
-.text-parachute { color: rgb(0, 0, 0)!important; }
-.text-dev { color: rgb(0, 0, 0)!important; }
+.text-health {
+  color: rgb(33, 171, 97) !important;
+}
+
+.text-stress {
+  color: #ff2b2b !important;
+}
+
+.text-nos {
+  color: rgb(255, 72, 133) !important;
+}
+
+.text-cruise {
+  color: rgb(255, 72, 133) !important;
+}
+
+.text-armed {
+  color: rgb(255, 72, 133) !important;
+}
+
+.text-harness {
+  color: rgb(182, 72, 255) !important;
+}
+
+.text-oxygen {
+  color: #e6d9ff !important;
+}
+
+.text-parachute {
+  color: rgb(0, 0, 0) !important;
+}
+
+.text-dev {
+  color: rgb(0, 0, 0) !important;
+}
 
 #main-container {
   width: 100%;
@@ -61,30 +181,31 @@ div#q-loading-bar { display: none!important; } /* makes sure there's no ajax loa
   font-size: 40px;
 }
 
-#sign, #bank {
+#sign,
+#bank {
   text-align: right;
   color: #00ac31;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 #plus {
   font-size: 50px;
   text-align: right;
   color: #00ac31;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 #minus {
   font-size: 50px;
   text-align: right;
   color: #ac0000;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 #money {
   text-align: right;
   color: #ffffff;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7);
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 /* Player HUD */
@@ -97,49 +218,55 @@ div#q-loading-bar { display: none!important; } /* makes sure there's no ajax loa
 }
 
 .q-ml-xl {
-  margin-left: -1.2176470588235294vw!important; /* Change this to space radials */
+  margin-left: -1.2176470588235294vw !important;
+  /* Change this to space radials */
 }
 
 /* Vehicle HUD */
 
 #speedometer {
   position: relative;
-  left: 2vh!important;
+  left: 2vh !important;
 }
+
 #fuelgauge {
   position: relative;
-  left: 3.5vh!important;
-  bottom: 6.6vh!important;
+  left: 3.5vh !important;
+  bottom: 6.6vh !important;
 }
+
 #altitudegauge {
   position: relative;
-  left: 5vh!important;
+  left: 5vh !important;
 }
+
 #seatbelt {
   position: relative;
-  left: 6.5vh!important;
-  bottom: 6.6vh!important;
+  left: 6.5vh !important;
+  bottom: 6.6vh !important;
 }
+
 #engine {
   position: relative;
-  left: 10.5vh!important;
-  bottom: 6.6vh!important;
+  left: 10.5vh !important;
+  bottom: 6.6vh !important;
 }
 
 speed:before {
-  content: "MPH"; /* If using KPH change this content from MPH */
+  content: "MPH";
+  /* If using KPH change this content from MPH */
   position: absolute;
   display: block;
   background: #fff;
-  font-size: 1.5vh!important;
-  -webkit-background-clip: text; 
+  font-size: 1.5vh !important;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 50%;
 }
 
 speed {
   position: fixed;
-  font-size: 5.5vh!important;
+  font-size: 5.5vh !important;
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
 }
@@ -147,7 +274,7 @@ speed {
 altitude:after {
   content: "ALT";
   display: block;
-  font-size: 0.9vh!important;
+  font-size: 0.9vh !important;
   padding-top: 10px;
   padding-left: 2px;
   padding-right: 2px;
@@ -155,12 +282,12 @@ altitude:after {
 
 altitude {
   transform: rotate(135deg);
-  font-size: 2vh!important;
-  position: fixed; 
-  color: #fff; 
+  font-size: 2vh !important;
+  position: fixed;
+  color: #fff;
   text-align: center;
   font-weight: 600;
-  text-shadow: -1px -1px 0 rgba(0,0,0, 0.7), 1px -1px 0 rgba(0,0,0, 0.7), -1px 1px 0 rgba(0,0,0, 0.7), 1px 1px 0 rgba(0,0,0, 0.7); 
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
 }
 
 /* Animation */
@@ -193,7 +320,7 @@ altitude {
   position: relative;
   top: 70vh;
   left: 1.4%;
-	width: 150px;
+  width: 150px;
   height: auto;
 }
 
@@ -253,7 +380,7 @@ altitude {
 
 .bezel {
   position: relative;
-  width:8vw;
+  width: 8vw;
   height: 2vh;
   font-family: 'Oxygen', sans-serif;
   font-size: 0.35vh;
@@ -264,7 +391,7 @@ altitude {
 
 .bearing {
   position: relative;
-  width:8vw;
+  width: 8vw;
   height: 2.5vh;
   font-family: 'Oxygen', sans-serif;
   font-size: 2vh;
