@@ -71,7 +71,9 @@ end
 
 local function sendBuffNUIData()
     -- Get player buffs nui info if they have buffs
-    if not exports[Config.Buffs] then return end
+    if not GetResourceState(Config.Buffs):match("start") then
+        return
+    end
     local buffNUIData = exports[Config.Buffs]:GetBuffNUIData()
     if buffNUIData then
         SendNUIMessage({

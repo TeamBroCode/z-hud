@@ -24,23 +24,23 @@ div#openmenu {
 }
 
 .q-tab-panels {
-  border-top-right-radius: 12px !important;
-  border-bottom-right-radius: 12px !important;
+  border-top-right-radius: 0.625vw !important;
+  border-bottom-right-radius: 0.625vw !important;
 }
 
-/* change all 12px for a different border radius (rounds edges of the menu) */
+/* change all 0.625vw for a different border radius (rounds edges of the menu) */
 .q-splitter__panel.q-splitter__before {
-  border-top-left-radius: 12px !important;
-  border-bottom-left-radius: 12px !important;
+  border-top-left-radius: 0.625vw !important;
+  border-bottom-left-radius: 0.625vw !important;
 }
 
-/* change all 12px for a different border radius (rounds edges of the menu) */
+/* change all 0.625vw for a different border radius (rounds edges of the menu) */
 .q-tabs--vertical.q-tabs--not-scrollable .q-tabs__content {
-  border-top-left-radius: 12px !important;
-  border-bottom-left-radius: 12px !important;
+  border-top-left-radius: 0.625vw !important;
+  border-bottom-left-radius: 0.625vw !important;
 }
 
-/* change all 12px for a different border radius (rounds edges of the menu) */
+/* change all 0.625vw for a different border radius (rounds edges of the menu) */
 
 /* Menu text styles */
 .text-h6 {
@@ -73,7 +73,7 @@ div#openmenu {
 }
 
 .q-checkbox__inner--truthy .q-checkbox__bg {
-  box-shadow: 0px 0px 3px 3px rgba(20, 140, 220, 0.15) !important;
+  box-shadow: 0px 0px 0.156vw 0.156vw rgba(20, 140, 220, 0.15) !important;
 }
 
 /* if you want the checkboxes to have a glow/shadow */
@@ -93,18 +93,18 @@ hr {
 
 /* removes extra top padding */
 .q-mb-md-d {
-  padding-left: 10px !important;
-  padding-bottom: 10px !important;
+  padding-left: 0.521vw !important;
+  padding-bottom: 0.521vw !important;
 }
 
 /* keeps q-items aligned */
 .q-item {
-  padding: 8px 0px !important;
+  padding: 0.417vw 0px !important;
 }
 
 /* keeps q-items aligned */
 .q-item__section--avatar {
-  min-width: 40px !important
+  min-width: 2.083vw !important
 }
 
 /* keeps q-items aligned */
@@ -178,34 +178,34 @@ div#q-loading-bar {
   right: 2vw;
   top: 5vh;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 2.083vw;
 }
 
 #sign,
 #bank {
   text-align: right;
   color: #00ac31;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: -0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), -0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7);
 }
 
 #plus {
-  font-size: 50px;
+  font-size: 2.604vw;
   text-align: right;
   color: #00ac31;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: -0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), -0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7);
 }
 
 #minus {
-  font-size: 50px;
+  font-size: 2.604vw;
   text-align: right;
   color: #ac0000;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: -0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), -0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7);
 }
 
 #money {
   text-align: right;
   color: #ffffff;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: -0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), -0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7);
 }
 
 /* Player HUD */
@@ -275,9 +275,9 @@ altitude:after {
   content: "ALT";
   display: block;
   font-size: 0.9vh !important;
-  padding-top: 10px;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-top: 0.521vw;
+  padding-left: 0.104vw;
+  padding-right: 0.104vw;
 }
 
 altitude {
@@ -287,7 +287,7 @@ altitude {
   color: #fff;
   text-align: center;
   font-weight: 600;
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+  text-shadow: -0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw -0.052vw 0 rgba(0, 0, 0, 0.7), -0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7), 0.052vw 0.052vw 0 rgba(0, 0, 0, 0.7);
 }
 
 /* Animation */
@@ -301,7 +301,7 @@ altitude {
 
 .slide-fade-enter-from,
 .slide-fade-leave-to {
-  transform: translateX(20px);
+  transform: translateX(1.042vw);
   opacity: 0;
 }
 
@@ -319,8 +319,8 @@ altitude {
 .baseplate {
   position: relative;
   top: 70vh;
-  left: 1.4%;
-  width: 150px;
+  left: 1.6%;
+  width: 12.604vw;
   height: auto;
 }
 
@@ -330,7 +330,7 @@ altitude {
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
   font-size: 1.6vh;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6);
 }
 
 .street1 {
@@ -345,7 +345,7 @@ altitude {
   margin: 0 auto;
   left: 10%;
   bottom: 10%;
-  font-size: 1.4vh;
+  font-size: 1.4v;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -359,7 +359,7 @@ altitude {
   color: #ff2b2b;
   font-size: 1.4vh;
   text-align: center;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6);
   z-index: 101;
 }
 
@@ -374,7 +374,7 @@ altitude {
   font-size: 1vh;
   font-weight: bold;
   text-align: center;
-  text-shadow: 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%), 0 0 1px rgb(0 0 0 / 60%);
+  text-shadow: 0 0 0.052vw rgb(0 0 0 / 60%), 0 0 0.052vw rgb(0 0 0 / 60%), 0 0 0.052vw rgb(0 0 0 / 60%), 0 0 0.052vw rgb(0 0 0 / 60%);
   z-index: 100;
 }
 
@@ -385,7 +385,7 @@ altitude {
   font-family: 'Oxygen', sans-serif;
   font-size: 0.35vh;
   font-weight: bold;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  text-shadow: 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6);
   z-index: 101;
 }
 
@@ -396,9 +396,9 @@ altitude {
   font-family: 'Oxygen', sans-serif;
   font-size: 2vh;
   font-weight: bold;
-  letter-spacing: 0.7px;
-  text-shadow: 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6), 0 0 1px rgba(0, 0, 0, 0.6);
+  letter-spacing: 0.036vw;
+  text-shadow: 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6), 0 0 0.052vw rgba(0, 0, 0, 0.6);
   background: #212121;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 1.563vw 3.125vw -0.625vw inset, rgba(0, 0, 0, 0.3) 0px 10.417vw 1.875vw -10.417vw inset;
+  border-radius: 0.260vw;
 }

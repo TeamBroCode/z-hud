@@ -1,8 +1,8 @@
 <html>
 
 <head>
-    <meta id="viewport" name="viewport"
-        content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <link rel="stylesheet" type="text/css" href="responsive.css" />
     <link href="https://cdn.jsdelivr.net/npm/quasar@2.1.0/dist/quasar.prod.css" rel="stylesheet" type="text/css" />
@@ -59,28 +59,17 @@
                     height="20" x="450" />
             </svg>
             <svg class="bearing">
-                <text v-if="showCompass" x="0" y="1.5" dominant-baseline="middle" text-anchor="middle"
-                    fill="#ffeb3b">N</text>
-                <text v-if="showCompass" x="360" y="1.5" dominant-baseline="middle" text-anchor="middle"
-                    fill="#ffeb3b">N</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="315" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="-45" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="45" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="405" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
-                <text v-if="showCompass" x="90" y="1.5" dominant-baseline="middle" text-anchor="middle"
-                    fill="white">E</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="135" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">SE</text>
-                <text v-if="showCompass" x="180" y="1.5" dominant-baseline="middle" text-anchor="middle"
-                    fill="white">S</text>
-                <text style="font-size: 1.4vh; opacity: 50%;" v-if="showCompass" x="225" y="-5"
-                    dominant-baseline="middle" text-anchor="middle" fill="white">SW</text>
-                <text v-if="showCompass" x="270" y="1.5" dominant-baseline="middle" text-anchor="middle"
-                    fill="white">W</text>
+                <text style="font-size: 0.8vw" v-if="showCompass" x="0" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="#ffeb3b">N</text>
+                <text style="font-size: 0.8vw" v-if="showCompass" x="360" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="#ffeb3b">N</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="315" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="-45" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">NW</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="45" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="405" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">NE</text>
+                <text style="font-size: 0.8vw" v-if="showCompass" x="90" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">E</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="135" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">SE</text>
+                <text style="font-size: 0.8vw"v-if="showCompass" x="180" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">S</text>
+                <text style="font-size: 0.5vw; opacity: 50%;" v-if="showCompass" x="225" y="-5" dominant-baseline="middle" text-anchor="middle" fill="white">SW</text>
+                <text style="font-size: 0.8vw" v-if="showCompass" x="270" y="1.5" dominant-baseline="middle" text-anchor="middle" fill="white">W</text>
             </svg>
         </div>
     </div>
